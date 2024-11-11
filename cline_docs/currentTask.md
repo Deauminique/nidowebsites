@@ -1,79 +1,111 @@
 ## Current Objective
-Frontend development voor NIDO Websites bedrijfswebsite
+Backend Development & Performance Optimalisatie voor NIDO Websites
 
 ## Context
-Dit is onderdeel van het project om een professionele website te creëren voor NIDO Websites, een webdesign bureau.
+Na succesvolle afronding van de frontend development fase en het oplossen van routing issues, focussen we nu op het implementeren van de backend functionaliteit en het optimaliseren van de website prestaties.
+
+## Recent Fixes
+✓ Router configuratie aangepast:
+- BrowserRouter basename ingesteld op '/nidowebsites'
+- Website nu correct toegankelijk op http://localhost:3002/nidowebsites/
+- Navigatie tussen pagina's werkt naar behoren
 
 ## Completed Tasks
-1. ✓ Homepage ontwikkeld met:
-   - Hero sectie met pakkende slogan
-   - Features overzicht
-   - "Waarom kiezen voor ons" sectie
-   - Call-to-action secties
+1. ✓ Frontend Development:
+   - Homepage met alle secties
+   - Services pagina met prijzen
+   - Portfolio pagina met projecten
+   - Over Ons pagina
+   - Contact pagina met form
 
-2. ✓ Services pagina ontwikkeld met:
-   - Gedetailleerde diensten beschrijvingen
-   - Werkproces uitleg
-   - Prijspakketten
-   - Features per dienst
+2. ✓ Frontend Routing:
+   - Base URL configuratie voor GitHub Pages
+   - Navigatie systeem werkend
+   - Alle routes correct geconfigureerd
 
-3. ✓ Portfolio pagina ontwikkeld met:
-   - Project showcases
-   - Technologie tags
-   - Resultaten per project
-   - Klant testimonials
+3. ✓ Backend Basis Setup:
+   - Node.js/Express.js project structuur opgezet
+   - Basis server configuratie met security middleware
+   - Contact form routes en controllers
+   - Prisma schema voor database
+   - Logging systeem geïmplementeerd
+   - Error handling middleware
 
-4. ✓ Over Ons pagina ontwikkeld met:
-   - Bedrijfsverhaal
-   - Missie en waarden
-   - Team sectie
-   - Statistieken
+## Current Sprint Focus
 
-5. ✓ Contact pagina ontwikkeld met:
-   - Contactformulier met validatie
-   - Contactinformatie
-   - FAQ sectie
-   - Openingstijden
+1. Database Setup & Configuratie:
+   - [ ] PostgreSQL database opzetten
+   - [ ] Prisma migrations uitvoeren
+   - [ ] Database connectie testen
+   - [ ] Basis data seeding script maken
 
-## Next Steps
-1. Backend Development:
-   - Setup Node.js/Express.js backend
-   - Implementeer contactformulier functionaliteit
-   - Email service integratie
-   - Database setup
+2. Contact Formulier Integratie:
+   - [ ] SendGrid API key configureren
+   - [ ] Email templates maken
+   - [ ] Frontend-backend integratie testen
+   - [ ] Error handling verfijnen
 
-2. Performance Optimalisatie:
-   - Implementeer lazy loading
-   - Optimaliseer afbeeldingen
-   - Setup caching
-   - Code splitting
+3. Performance Optimalisatie (Parallel):
+   - [ ] Lazy loading voor afbeeldingen
+   - [ ] Code splitting implementeren
+   - [ ] Asset optimalisatie
+   - [ ] Caching strategie opzetten
 
-3. SEO Implementatie:
-   - Meta tags systeem
-   - Sitemap generatie
-   - Structured data
-   - Performance optimalisatie
-
-4. Testing & Quality Assurance:
-   - Cross-browser testing
-   - Responsive testing
-   - Performance testing
-   - Accessibility testing
+4. SEO Implementatie (Parallel):
+   - [ ] Meta tags systeem
+   - [ ] Sitemap.xml genereren
+   - [ ] Robots.txt configureren
+   - [ ] Structured data toevoegen
 
 ## Technical Considerations
-- Frontend is gebouwd met React + TypeScript
-- Styling is geïmplementeerd met Tailwind CSS
-- Responsive design is geïmplementeerd voor alle schermformaten
-- Form validatie is client-side geïmplementeerd, moet nog server-side worden toegevoegd
+- Frontend: React met TypeScript, routing via React Router
+- Backend stack: Node.js, Express.js, PostgreSQL, Prisma
+- Email service: SendGrid
+- Performance metrics target: Lighthouse score >90
+- Security: Rate limiting en input validatie geïmplementeerd
+- Monitoring: Winston logger opgezet
 
-## User Feedback Integration
-- Website layout is intuïtief en gebruiksvriendelijk
-- Content is professioneel en informatief
-- Navigatie is duidelijk en consistent
-- Contact mogelijkheden zijn goed zichtbaar
+## Immediate Next Steps
+1. Database Setup:
+   - PostgreSQL lokaal installeren
+   - Database aanmaken
+   - Prisma migrations uitvoeren
+   - Connectie testen
+
+2. Email Service:
+   - SendGrid account aanmaken
+   - API key configureren
+   - Email templates ontwikkelen
+   - Test emails versturen
+
+3. Frontend Integratie:
+   - API endpoints testen
+   - Contact form aanpassen voor backend integratie
+   - Error handling toevoegen
+   - Loading states implementeren
 
 ## Documentation Updates Needed
-- API endpoints documentatie voor backend integratie
+- API endpoints documentatie
+- Database schema documentatie
+- Email template specificaties
 - Deployment instructies
-- Content update handleiding
-- Maintenance procedures
+
+## Risk Factors
+- Database performance en scaling
+- Email service betrouwbaarheid
+- Performance impact van nieuwe features
+- SEO impact van technische keuzes
+
+## Success Metrics
+- Backend API response times <100ms
+- Email delivery success rate >99%
+- Lighthouse performance score >90
+- Server uptime >99.9%
+- Succesvolle form submissions zonder errors
+
+## Next Review Points
+- Database setup verificatie
+- API endpoint tests
+- Email delivery tests
+- Performance metrics baseline
+- Security audit resultaten
