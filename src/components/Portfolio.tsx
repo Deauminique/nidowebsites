@@ -1,8 +1,8 @@
 import React from "react";
 import type { ProjectItem } from "../types";
-import portfolio1 from "/images/portfolio1.jpg";
-import portfolio2 from "/images/portfolio2.jpg";
-import portfolio3 from "/images/portfolio3.jpg";
+import portfolio1 from "../assets/images/portfolio1.jpg";
+import portfolio2 from "../assets/images/portfolio2.jpg";
+import portfolio3 from "../assets/images/portfolio3.jpg";
 
 const projects: ProjectItem[] = [
   {

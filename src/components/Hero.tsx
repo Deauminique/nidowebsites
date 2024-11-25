@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import heroImage from "/images/hero.jpg";
+import heroImage from "../assets/images/hero.jpg";
 
 const Hero: React.FC = () => {
   return (
