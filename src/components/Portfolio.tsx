@@ -1,22 +1,24 @@
 import React from "react";
 import type { ProjectItem } from "../types";
-import { getAssetPath } from "../utils/assetPath";
+import portfolio1 from "../assets/portfolio1.jpg";
+import portfolio2 from "../assets/portfolio2.jpg";
+import portfolio3 from "../assets/portfolio3.jpg";
 
 const projects: ProjectItem[] = [
   {
     title: "E-commerce Platform",
     description: "Moderne webshop voor een fashion retailer",
-    image: getAssetPath("/images/portfolio1.jpg"),
+    image: portfolio1,
   },
   {
     title: "Corporate Website",
     description: "Professionele website voor een advocatenkantoor",
-    image: getAssetPath("/images/portfolio2.jpg"),
+    image: portfolio2,
   },
   {
     title: "Web Applicatie",
     description: "Custom CRM systeem voor een groothandel",
-    image: getAssetPath("/images/portfolio3.jpg"),
+    image: portfolio3,
   },
 ];
 

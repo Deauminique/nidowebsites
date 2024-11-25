@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import { getAssetPath } from "../utils/assetPath";
+import heroImage from "../assets/hero.jpg";
 
 const Hero: React.FC = () => {
   return (
@@ -29,10 +29,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <div className="hero-image">
-        <img
-          src={getAssetPath("/images/hero.jpg")}
-          alt="Team working on web development"
-        />
+        <img src={heroImage} alt="Team working on web development" />
       </div>
     </div>
   );
