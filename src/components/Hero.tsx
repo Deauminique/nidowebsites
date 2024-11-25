@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero: React.FC = () => {
   const baseUrl = import.meta.env.BASE_URL;
+  const imagePath = `${baseUrl}images/hero.jpg`;
 
   return (
     <div className="hero">
@@ -31,7 +32,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="hero-image">
         <img
-          src={`${baseUrl}images/hero.jpg`}
+          src={imagePath}
           alt="Team working on web development"
         />
       </div>

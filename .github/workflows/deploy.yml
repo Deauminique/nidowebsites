@@ -38,11 +38,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Copy public images
-        run: |
-          mkdir -p dist/images
-          cp -r public/images/* dist/images/
-
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
