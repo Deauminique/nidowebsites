@@ -1,24 +1,21 @@
 import React from "react";
 import type { ProjectItem } from "../types";
-import portfolio1 from "../assets/portfolio1.jpg";
-import portfolio2 from "../assets/portfolio2.jpg";
-import portfolio3 from "../assets/portfolio3.jpg";
 
 const projects: ProjectItem[] = [
   {
     title: "E-commerce Platform",
     description: "Moderne webshop voor een fashion retailer",
-    image: portfolio1,
+    image: new URL("/images/portfolio1.jpg", import.meta.url).href,
   },
   {
     title: "Corporate Website",
     description: "Professionele website voor een advocatenkantoor",
-    image: portfolio2,
+    image: new URL("/images/portfolio2.jpg", import.meta.url).href,
   },
   {
     title: "Web Applicatie",
     description: "Custom CRM systeem voor een groothandel",
-    image: portfolio3,
+    image: new URL("/images/portfolio3.jpg", import.meta.url).href,
   },
 ];
 

@@ -1,8 +1,9 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import heroImage from "../assets/hero.jpg";
 
 const Hero: React.FC = () => {
+  const heroImage = new URL("/images/hero.jpg", import.meta.url).href;
+
   return (
     <div className="hero">
       <div className="hero-container">
