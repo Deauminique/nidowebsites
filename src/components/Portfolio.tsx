@@ -1,25 +1,27 @@
 import React from "react";
 import type { ProjectItem } from "../types";
 
-const projects: ProjectItem[] = [
-  {
-    title: "E-commerce Platform",
-    description: "Moderne webshop voor een fashion retailer",
-    image: new URL("/images/portfolio1.jpg", import.meta.url).href,
-  },
-  {
-    title: "Corporate Website",
-    description: "Professionele website voor een advocatenkantoor",
-    image: new URL("/images/portfolio2.jpg", import.meta.url).href,
-  },
-  {
-    title: "Web Applicatie",
-    description: "Custom CRM systeem voor een groothandel",
-    image: new URL("/images/portfolio3.jpg", import.meta.url).href,
-  },
-];
-
 const Portfolio: React.FC = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
+  const projects: ProjectItem[] = [
+    {
+      title: "E-commerce Platform",
+      description: "Moderne webshop voor een fashion retailer",
+      image: `${baseUrl}images/portfolio1.jpg`,
+    },
+    {
+      title: "Corporate Website",
+      description: "Professionele website voor een advocatenkantoor",
+      image: `${baseUrl}images/portfolio2.jpg`,
+    },
+    {
+      title: "Web Applicatie",
+      description: "Custom CRM systeem voor een groothandel",
+      image: `${baseUrl}images/portfolio3.jpg`,
+    },
+  ];
+
   return (
     <div id="portfolio" className="portfolio">
       <div className="portfolio-container">
