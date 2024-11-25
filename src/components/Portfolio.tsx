@@ -1,22 +1,24 @@
 import React from "react";
 import type { ProjectItem } from "../types";
-import { getAssetPath } from "../utils/assetPath";
+import portfolio1 from "/images/portfolio1.jpg";
+import portfolio2 from "/images/portfolio2.jpg";
+import portfolio3 from "/images/portfolio3.jpg";
 
 const projects: ProjectItem[] = [
   {
     title: "E-commerce Platform",
     description: "Moderne webshop voor een fashion retailer",
-    image: "/images/portfolio1.jpg",
+    image: portfolio1,
   },
   {
     title: "Corporate Website",
     description: "Professionele website voor een advocatenkantoor",
-    image: "/images/portfolio2.jpg",
+    image: portfolio2,
   },
   {
     title: "Web Applicatie",
     description: "Custom CRM systeem voor een groothandel",
-    image: "/images/portfolio3.jpg",
+    image: portfolio3,
   },
 ];
 
@@ -36,7 +38,7 @@ const Portfolio: React.FC = () => {
             <div key={index} className="portfolio-card">
               <div className="portfolio-image-wrapper">
                 <img
-                  src={getAssetPath(project.image)}
+                  src={project.image}
                   alt={project.title}
                   className="portfolio-image"
                 />
