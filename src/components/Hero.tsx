@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { getAssetPath } from "../utils/assetPath";
 
 const Hero: React.FC = () => {
   return (
@@ -28,7 +29,10 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <div className="hero-image">
-        <img src="/images/hero.jpg" alt="Team working on web development" />
+        <img
+          src={getAssetPath("/images/hero.jpg")}
+          alt="Team working on web development"
+        />
       </div>
     </div>
   );

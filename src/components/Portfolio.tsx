@@ -1,5 +1,6 @@
 import React from "react";
 import type { ProjectItem } from "../types";
+import { getAssetPath } from "../utils/assetPath";
 
 const projects: ProjectItem[] = [
   {
@@ -35,7 +36,7 @@ const Portfolio: React.FC = () => {
             <div key={index} className="portfolio-card">
               <div className="portfolio-image-wrapper">
                 <img
-                  src={project.image}
+                  src={getAssetPath(project.image)}
                   alt={project.title}
                   className="portfolio-image"
                 />
